@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+::selection {
+  background-color: #4bbec9; /* Arka plan rengi */
+}
+
+/*Header*/
+.kristi-regular {
+    font-family: "Kristi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+header {
+    text-align :center;
+    margin: 0; 
+    padding-top: 20px; 
+    padding-bottom: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+header .background-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#hello{
+  padding-top: 30px;
+}
+
+nav {
+    margin-top: 10px;
+    position: relative; 
+    z-index: 1; 
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    position: relative;
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  nav ul li a:hover {
+    background-color: #084b29;
+    transform: scale(1.1);
+  }
+
+  nav ul li:hover ul {
+    display: block;
+  }
+
+  nav ul li ul li a {
+    padding: 10px;
+    color: white;
+    white-space: nowrap;
+    display: block;
+  }
+
+#name{
+    padding: 100px;
+    font-size: 1500%; 
+    font-family: 'Kristi', handwriting;
+  }
+
+  .btn{
+    background-color: white;
+    color: rgb(100, 0, 33);
+    margin-top: 0;
+    font-weight: bold;
+}
+
+  /*Main*/
+
+.underline-text {
+  display: inline-block; /*çizgi genişliği*/
+  border-bottom: 3px solid #347e71;
+  padding: 10px;
+  width: 7%;
+}
+
+.subheading{
+  font-weight: bold;
+}
+
+
+/*About*/
+#about-section{
+  padding: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#about-h1{
+    padding: 10px;
+    font-size: 800%; 
+    font-family: 'Kristi', handwriting;
+    color: rgb(12, 66, 72);
+  }
+
+#text-about{
+    text-align: left;
+}
+
+#about-profile{
+  justify-content: center;
+}
+
+/*Services*/
+
+#services{
+    font-size: 800%; 
+    font-family: 'Kristi', handwriting;
+    color: rgb(12, 66, 72);
+    text-align: center;
+}
+
+
+.subheading-service{
+    font-weight: bold;
+    padding: 20px;
+    color:  rgb(12, 66, 72);
+}
+
+
+#services-content{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/*Skills*/
+#skills{
+  font-size: 700%; 
+    font-family: 'Kristi', handwriting;
+    color: rgb(12, 66, 72);
+}
+
+#skills-section{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 200px;
+}
+
+section.bg-image {
+    height: 900px;
+    background-image: url('images/backgrounds/Jane\ D..svg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.skill-para{
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.progressbar {
+  width: 500px;
+  padding: 70px; 
+  background-color: white; 
+  text-align: left;
+  color: #2b4d50; 
+}
+
+/*Portfolio*/
+
+#portfolio-section{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/*Testimonials*/
+
+#subheading-testimonial{
+  font-weight: bold;
+  color:  rgb(12, 66, 72);
+}
+
+#testimonials-section{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+
+.circle-image-container {
+    position:relative;
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0 10px 10px rgb(12, 66, 72);
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#testimonial-content{
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+#testimonial-text{
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*Contact*/
+
+#contact-section{
+  padding-top: 40px;
+}
+
+#contact-font{
+  font-size: 800%; 
+  font-family: 'Kristi', handwriting; 
+  color: rgb(12, 66, 72);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+section.bg-image2 {
+  height: 900px;
+  background-image: url('images/backgrounds/contact.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding: 50px; 
+  z-index: -1;
+}
+
+#contact-form{
+  border-color: transparent;
+  background-color: white;
+  border-radius: 50px;
+  padding: 50px;
+}
+
+#contact-indent{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#contact-text{
+  text-align: start;
+  color: #084b29;
+}
+
+/*Footer*/
+.footer-content {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.social-media-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-media-links a {
+  text-decoration: none;
+  color: #d14a4a;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+  color: #007bff;
+}
+
+.fab {
+  margin-right: 5px;
+}
