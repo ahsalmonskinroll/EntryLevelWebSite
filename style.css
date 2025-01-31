@@ -5,13 +5,14 @@
   }
 }
 
-@media (min-width: 576px) {
-  #hello{
-    font-size: 3vw;
-  }
-  #name {
-    font-size: 12vw; /* Daha uygun font boyutu */
+@media (max-width: 768px) {
+.about-section {
+  margin: 15px;
 }
+/* .background-svg{
+  height: auto; 
+    max-height: 90vh; 
+} */
 }
 
 body {
@@ -39,16 +40,11 @@ body {
 
 header {
   color: white;
-}
-
-.background-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: fit-content;
+  background-image: url('images/backgrounds/dene4.png');
   z-index: -1;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .navbar-brand {
@@ -86,19 +82,17 @@ nav ul li a:hover {
   color: #0c7575;
 }
 
-
-
 #hello {
   justify-content: center;
   display: flex;
-  padding: 50px 0px;
+  padding: 50px 0px 0px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  font-size: xx-large;
+  font-size: 3vh;
 }
 
 #name {
-  font-size: 300px;
+  font-size: 20vh;
   font-family: 'Kristi', handwriting;
   z-index: 3;
   color: white;
@@ -124,7 +118,7 @@ nav ul li a:hover {
   color: #097e93;
 }
 
-.headers {
+.main-headers {
   font-size: 800%;
   font-family: 'Kristi', handwriting;
   color: rgb(12, 66, 72);
@@ -134,7 +128,7 @@ nav ul li a:hover {
 
 /*About*/
 .about-section {
-  margin: 100px 60px;
+  margin: 0px 60px;
 }
 
 
