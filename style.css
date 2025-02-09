@@ -23,7 +23,7 @@ body {
 
 header {
   color: white;
-  background-image: url("images/backgrounds/dene4.png");
+  background-image: url("images/backgrounds/dene5.png");
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,10 +44,11 @@ header {
   justify-content: center;
   gap: 15px;
   z-index: 1;
+  background-color: #65b3bb;
 }
 
 .navbar-link {
-  color: white;
+  color: black;
   display: block;
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
@@ -73,19 +74,20 @@ nav ul li a:hover {
 #hello {
   justify-content: center;
   display: flex;
-  padding: 50px 0px 0px;
+  text-align: center;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+  font-size: 50px;
 }
 
 #name {
-  font-size: 20vh;
+  font-size: 220px;
   font-family: "Kristi", handwriting;
   z-index: 3;
   color: white;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 /*Main*/
@@ -235,6 +237,7 @@ nav ul li a:hover {
   color: rgb(12, 66, 72);
 }
 
+
 .circle-image-container {
   position: relative;
   width: 150px;
@@ -345,17 +348,21 @@ nav ul li a:hover {
 }
 
 
+@media (max-width: 992px) {
+  .image_logo {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .about-section {
     margin: 15px;
   }
+  .image_logo {
+    width: 20%;
+  }
   #hello {
     padding: 10px 0px 0px;
-    color: rgb(12, 66, 72);
-  }
-  #name {
-
-    color: rgb(12, 66, 72);
+    font-size: 30px;
   }
   .skills-left {
     justify-content: center;
@@ -376,5 +383,17 @@ nav ul li a:hover {
     /*portfolio*/
     flex: 0 0 auto;
     width: 20% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #name{
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 408px) {
+  .main-headers{
+    font-size: 300%;
   }
 }
